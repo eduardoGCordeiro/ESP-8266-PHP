@@ -1,0 +1,177 @@
+#main
+{
+    margin: auto;
+}
+
+body
+{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 200;
+    color: #262626;
+}
+
+#main-footer-motor
+{
+    text-align: center;
+    width: 100%;
+    background: #333333;
+    color: whitesmoke;
+    bottom: 0;
+    left: 0;
+    height: 3em;
+    position: fixed;
+}
+
+#main-head-motor
+{
+    text-align: center;
+    width: 100%;
+    background: #333333;
+    color: whitesmoke;
+    top: 0;
+    left: 0;
+    height: 4em;
+    position: fixed;
+}
+
+#main-div-controller-motor
+{
+    margin-left: 40%;
+    margin-top: 9%;
+    margin-right: auto;
+    border: solid 0.06em #0d0d0d;
+    box-shadow: grey;
+    border-radius: 1em;
+    width: 40%;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+}
+
+#tittle-main-motor-div
+{
+    border-bottom: solid 0.06em #0d0d0d;
+}
+
+#div-form-controller-motor
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#table-controller-motor
+{
+    margin: auto;
+}
+
+#table-head-controller-motor th
+{
+    font-size: 1em;
+}
+
+.table-body-td-buttons-controller-motor
+{
+    width: 18.5%;
+}
+
+.table-body-buttons-controller-motor
+{
+    text-align: center;
+    background-color: #22dd51;
+    color: white;
+    border-radius: 100%;
+    font-size: 4em;
+    border: solid 0.02em #1cb041;
+    height: 1.5em;
+    width: 1.5em;
+    text-align-all: center;
+}
+
+.table-body-buttons-controller-motor:hover
+{
+    text-align: center;
+    background-color: #1cb041;
+    color: white;
+    border-radius: 100%;
+    font-size: 4em;
+    border: solid 0.02em #1cb041;
+    height: 1.5em;
+    width: 1.5em;
+    text-align-all: center;
+}
+
+#table-body-reset-botton-controller-motor
+{
+    background-color: #22dd51;
+    color: white;
+    border-radius: 0.4em;
+    font-size: large;
+    border: solid 0.05em #1cb041;
+    padding: 3%;
+}
+
+#table-body-reset-botton-controller-motor:hover
+{
+    background-color: #1cb041;
+    color: white;
+    border-radius: 0.4em;
+    font-size: large;
+    border: solid 0.05em #1cb041;
+    padding: 3%;
+}
+
+#table-body-tr-reset-controller-motor
+{
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+#main-div-configure-motor
+{
+    float: left;
+    margin-left: 10%;
+    margin-right: auto;
+    border: solid 0.06em #0d0d0d;
+    box-shadow: grey;
+    border-radius: 1em;
+    width: 22%;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+}
+
+#tittle-main-configure-motor-div
+{
+    border-bottom: solid 0.06em #0d0d0d;
+    margin: auto;
+}
+
+#table-body-configure-motor
+{
+    width: 3em;
+}
+
+.table-body-tr-inputs-configure-motor
+{
+    width: 20em;
+}
+
+#div-form-configure-motor
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#table-configure-motor
+{
+    margin-left: 15%;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.span-configure-motor
+{
+    margin-left: 30%;
+    width: 3em;
+}

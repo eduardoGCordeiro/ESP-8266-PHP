@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motor Controller</title>
+</head>
+<body>
+
+       <link rel="stylesheet" href="styleControlMotor-ESP.css">
+       <script type="text/javascript" src="scriptControlMotor.js"></script>
+
+        <div id="main">
+
+            <div id="main-head-motor">
+                <h4>MOTOR - ESP</h4>
+            </div>
+
+            <div id="div-message-system">
+                <h3 id="message-system"></h3>
+            </div>
+
+            <div id="main-div-configure-motor">
+                <div>
+                    <div id = "tittle-main-configure-motor-div">
+                        <h1>Configure Motor</h1>
+                    </div>
+                    <div id = "div-form-configure-motor">
+                            <table id="table-configure-motor">
+                                <tbody id="table-body-configure-motor">
+                                <tr class=table-body-tr-inputs-configure-motor">
+                                    <td class="table-body-td-configure-motor">
+                                        <legend>Size step</legend>
+                                        <input class="table-body-input-configure-motor" id="table-body-step-input-controller-motor" type="range" min="1" max="200" name="step" onchange="exibeNumeroStep(this.value)">
+                                    </td>
+                                    <td class="span-configure-motor">
+                                        <span id="number-step-configure-motor"></span>
+                                    </td>
+                                </tr>
+                                <tr class="table-body-tr-inputs-configure-motor">
+                                    <td class="table-body-td-configure-motor">
+                                        <legend>Size step angle</legend>
+                                        <input class="table-body-input-configure-motor" id="table-body-angle-input-controller-motor" type="range" min="1" max="360" name="angle" onchange="exibeNumeroAngle(this.value)">
+                                    </td>
+                                    <td class="span-configure-motor">
+                                        <span id="number-angle-configure-motor"></span>
+                                    </td>
+                                </tr>
+                                <tr class="table-body-tr-inputs-configure-motor">
+                                    <td class="table-body-td-configure-motor">
+                                        <legend>Speed</legend>
+                                        <input class="table-body-input-configure-motor" id="table-body-speed-input-controller-motor" type="range" min="1" max="150" name="speed" onchange="exibeNumeroSpeed(this.value)">
+                                    </td>
+                                    <td class="span-configure-motor">
+                                        <span id="number-speed-configure-motor"></span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+
+                            </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id = "main-div-controller-motor">
+                <div id = "tittle-main-motor-div">
+                    <h1>Motor Controller</h1>
+                </div>
+
+                <div id = "div-form-controller-motor">
+                    <form id="form-move" method="post" action="controlMotor-ESP.php" onsubmit="return false">
+                        <table id="table-controller-motor">
+                            <thead id="table-head-controller-motor">
+                            <tr>
+                                <th>
+                                    <h5>Anticlockwise</h5>
+                                </th>
+                                <th>
+                                    <h5>Clockwise</h5>
+                                </th>
+                                <th>
+                                    <h5>Angle Move</h5>
+                                </th>
+                            </tr>
+                            </thead>
+
+                            <tbody id="table-body-controller-motor">
+
+                            <tr id="table-body-tr-buttons-controller-motor">
+                                <td class="table-body-td-buttons-controller-motor">
+                                    <button class="table-body-buttons-controller-motor" id="table-body-negative-botton-controller-motor" type="submit" name="move" value="negative" onclick="sendData(this)"> - </button>
+                                </td>
+                                <td class="table-body-td-buttons-controller-motor">
+                                    <button class="table-body-buttons-controller-motor" id="table-body-positive-botton-controller-motor" type="submit" name="move" value="positive" onclick="sendData(this)"> + </button>
+                                </td>
+                                <td class="table-body-td-buttons-controller-motor">
+                                    <button class="table-body-buttons-controller-motor" id="table-body-angle-botton-controller-motor" type="submit" name="move" value="angle" onclick="sendData(this)">&ang;</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan = "3" id="table-body-tr-reset-controller-motor">
+                                    <button id="table-body-reset-botton-controller-motor" type="submit" name="reset" name="move" value="reset" onclick="sendData(this)">Reset Position</button>
+                                </td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <div id="main-footer-motor">
+                <h5>&copy; Eduardo Cordeiro - UEPG</h5>
+            </div>
+
+        </div>
+
+</body>
+</html>
